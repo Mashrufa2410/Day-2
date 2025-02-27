@@ -20,7 +20,7 @@ function CheckoutForm() {
   const [selectedPayment, setSelectedPayment] = useState("card");
 
   useEffect(() => {
-    fetch("http://localhost:5000/create-payment-intent", {
+    fetch("https://day-2-server-eta.vercel.app/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount: 8280 }),
